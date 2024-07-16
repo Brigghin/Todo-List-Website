@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="headContainer">
+        <i class="material-icons" style="font-size:40px;" id="headText">checklist</i>
+        <h1>ToDo List</h1>
+    </div>
+
+    <div class="errorPopups">
+
+    <div id="emptyErrorPopup"> 
+        <i class="material-icons" style="font-size:15px;">info</i>
+        <p>You cannot enter an empty task</p>
+    </div>
+
+    <div id="duplicateErrorPopup"> 
+        <i class="material-icons" style="font-size:15px;">info</i>
+        <p>You already have this task</p>
+    </div>
+
+    </div>
+
+    <div class="formContainer">
+        <form>
+            <input 
+            type="text"
+            placeholder="Enter Task..." 
+            id="formInput"/>
+        </div>
+
+        <div class="formButton">
+            <button type="submit">
+                <div class="formButtonText">
+                    <i class="material-icons" style="font-size:20px;">checkmark</i>
+                    Add Task
+                </div>
+            </button>
+        </form>
+    </div>
+
+    <div class="checkboxContainer">
+        <ul class="taskList"></ul>
+    </div>
+
+    <div class="completedHeader">
+        <h2>Completed Tasks</h2>
+        <hr>
+    </div>
+    
+    <div class="checkboxContainer">
+        <ul class="completedTaskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

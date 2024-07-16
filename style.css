@@ -1,0 +1,149 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* title */
+
+.headContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headContainer h1 {
+  margin-left: 10px;
+}
+
+/* Error Popup */
+
+#emptyErrorPopup {
+  top: 82px;
+  display: none;
+  position: absolute;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  margin-left: -110px;
+  color: rgb(255, 95, 95);
+}
+
+#duplicateErrorPopup {
+  top: 82px;
+  display: none;
+  position: absolute;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  margin-left: -110px;
+  color: rgb(255, 95, 95);
+}
+
+.errorPopups i {
+  margin-right: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.errorPopups p {
+  margin-bottom: 2px;
+  margin-top: 0px;
+  font-size: 13px;
+}
+
+/* Form */
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#formInput {
+  font-size: 23px;
+  width: 40vw;
+  height: 35px;
+}
+
+.formButton {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formButtonText {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 5vw;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.formButtonText i {
+  width: 23px;
+  margin-top: 0px;
+}
+
+/* Checkbox list  */
+
+.checkboxContainer {
+  display: flex;
+  justify-content: start;
+  margin-left: 10vw;
+}
+
+.checkboxDiv {
+  position: relative;
+}
+
+.taskList > .checkboxDiv {
+  display: flex;
+  margin-top: 15px;
+  font-size: 20px;
+  width: 70vw;
+  word-wrap: break-word;
+}
+
+.completedTaskList > .checkboxDiv {
+  display: flex;
+  margin-top: 15px;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: rgb(138, 138, 138);
+  width: 70vw;
+  word-wrap: break-word;
+}
+
+.cancelIcon {
+  color: rgba(255, 180, 180, 0.341);
+  position: absolute;
+  left: -30px;
+  bottom: 1px;
+}
+
+.cancelIcon:hover {
+  color: rgba(255, 44, 44, 0.726);
+}
+
+.cancelButton {
+  background-color: transparent;
+  border: transparent;
+}
+
+
+
+/* Completed Checkbox header */
+
+.completedHeader h2{
+  display: none;
+  position: relative;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.completedHeader hr{
+  display: none;
+}
