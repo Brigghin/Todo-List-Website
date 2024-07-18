@@ -4,19 +4,19 @@ body {
 
 /* title */
 
-.headContainer {
+#divTitle {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.headContainer h1 {
+#divTitle h1 {
   margin-left: 10px;
 }
 
 /* Error Popup */
 
-#emptyErrorPopup {
+#divEmptyErrorPopup {
   top: 82px;
   display: none;
   position: absolute;
@@ -28,7 +28,7 @@ body {
   color: rgb(255, 95, 95);
 }
 
-#duplicateErrorPopup {
+#divDuplicateErrorPopup {
   top: 82px;
   display: none;
   position: absolute;
@@ -40,13 +40,13 @@ body {
   color: rgb(255, 95, 95);
 }
 
-.errorPopups i {
+#divErrorPopups i {
   margin-right: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.errorPopups p {
+#divErrorPopups p {
   margin-bottom: 2px;
   margin-top: 0px;
   font-size: 13px;
@@ -54,60 +54,56 @@ body {
 
 /* Form */
 
-.formContainer {
+#divTodoForm {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
 }
 
-#formInput {
+#inputTodo {
   font-size: 23px;
   width: 40vw;
   height: 35px;
 }
 
-.formButton {
+#divFormButton {
   margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.formButtonText {
+#divFormButtonText {
   display: inline-flex;
   align-items: center;
   padding: 5px 5vw;
   font-family: "Noto Sans", sans-serif;
 }
 
-.formButtonText i {
+#divFormButtonText i {
   width: 23px;
   margin-top: 0px;
 }
 
 /* Checkbox list  */
 
-.checkboxContainer {
-  display: flex;
-  justify-content: start;
-  margin-left: 10vw;
-}
-
-.checkboxDiv {
+.divTodoCheckbox {
   position: relative;
 }
 
-.taskList > .checkboxDiv {
-  display: flex;
+.divCheckbox {
+  margin-left: 15vw;
+}
+
+#ulTodoList > .divTodoCheckbox {
   margin-top: 15px;
   font-size: 20px;
   width: 70vw;
   word-wrap: break-word;
 }
 
-.completedTaskList > .checkboxDiv {
-  display: flex;
+#ulCompletedTodoList > .divTodoCheckbox {
   margin-top: 15px;
   font-size: 20px;
   text-decoration: line-through;
@@ -116,18 +112,23 @@ body {
   word-wrap: break-word;
 }
 
-.cancelIcon {
+input[type="checkbox" i] {
+  position: relative;
+  right: 10px;
+}
+
+.iconCancel {
   color: rgba(255, 180, 180, 0.341);
   position: absolute;
   left: -30px;
-  bottom: 1px;
+  top: 3px;
 }
 
-.cancelIcon:hover {
+.iconCancel:hover {
   color: rgba(255, 44, 44, 0.726);
 }
 
-.cancelButton {
+.buttonCancel {
   background-color: transparent;
   border: transparent;
 }
@@ -136,7 +137,7 @@ body {
 
 /* Completed Checkbox header */
 
-.completedHeader h2{
+#divCompletedTitle h2{
   display: none;
   position: relative;
   justify-content: center;
@@ -144,6 +145,6 @@ body {
   font-size: 18px;
 }
 
-.completedHeader hr{
+#divCompletedTitle hr{
   display: none;
 }

@@ -11,36 +11,39 @@
     <title>Todo List</title>
 </head>
 <body>
-    <div class="headContainer">
+    <!-- Page Title -->
+    <div id="divTitle">
         <i class="material-icons" style="font-size:40px;" id="headText">checklist</i>
-        <h1>ToDo List</h1>
+        <h1>Todo List</h1>
     </div>
 
-    <div class="errorPopups">
+    <!-- Error Popups -->
+    <div id="divErrorPopups">
 
-    <div id="emptyErrorPopup"> 
+    <div id="divEmptyErrorPopup"> 
         <i class="material-icons" style="font-size:15px;">info</i>
         <p>You cannot enter an empty task</p>
     </div>
 
-    <div id="duplicateErrorPopup"> 
+    <div id="divDuplicateErrorPopup"> 
         <i class="material-icons" style="font-size:15px;">info</i>
         <p>You already have this task</p>
     </div>
-
     </div>
 
-    <div class="formContainer">
-        <form>
+    <!-- Todo form -->
+    <div id="divTodoForm">
+        <form id="formTodo">
             <input 
             type="text"
             placeholder="Enter Task..." 
-            id="formInput"/>
+            id="inputTodo"/>
         </div>
 
-        <div class="formButton">
+    <!-- Submit button -->
+        <div id="divFormButton">
             <button type="submit">
-                <div class="formButtonText">
+                <div id="divFormButtonText">
                     <i class="material-icons" style="font-size:20px;">checkmark</i>
                     Add Task
                 </div>
@@ -48,17 +51,20 @@
         </form>
     </div>
 
-    <div class="checkboxContainer">
-        <ul class="taskList"></ul>
+    <!-- Todo List -->
+    <div class="divCheckbox">
+        <ul id="ulTodoList"></ul>
     </div>
 
-    <div class="completedHeader">
+    <!-- Completed Todo List Title -->
+    <div id="divCompletedTitle">
         <h2>Completed Tasks</h2>
         <hr>
     </div>
     
-    <div class="checkboxContainer">
-        <ul class="completedTaskList"></ul>
+    <!-- Completed Todo List -->
+    <div class="divCheckbox">
+        <ul id="ulCompletedTodoList"></ul>
     </div>
 
     <script src="script.js"></script>
