@@ -1,1 +1,1 @@
-Simple todo list project using vanilla CSS and JS
+Simple todo list project using CSS, HTML, and vanilla JS
